@@ -148,15 +148,11 @@ Show patients age 30-50	🔬 Patient Agent
 Schedule appointment	📅 Appointment Agent
 Create task	✅ Task Agent
 Add note	📝 Notes Agent
+🎓 Acknowledgements
 
----
+Built as part of the Gen AI Academy APAC program.
 
-## 🎓 Acknowledgements
+👩‍💻 Author
 
-Built as part of the **Gen AI Academy APAC** program.
-
----
-
-## 👩‍💻 Author
-
-**Sushmitha** — [GitHub](https://github.com/Sushmitha2707)
+Sushmitha
+GitHub: https://github.com/Sushmitha2707
