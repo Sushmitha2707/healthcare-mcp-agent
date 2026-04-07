@@ -152,7 +152,11 @@ Add note	📝 Notes Agent
 
 Built as part of the Gen AI Academy APAC program.
 
-👩‍💻 Author
+---
+
+### 👩‍💻 Author
 
 Sushmitha
 GitHub: https://github.com/Sushmitha2707
+
+---
