@@ -91,39 +91,101 @@ healthcare-mcp-agent/
 
 ---
 
-## ⚙️ Setup & Installation
+## ☁️ Setup & Deployment (Google Cloud Run)
+1️⃣ Open Google Cloud Shell
 
-1. **Clone the repository**
+Go to:
+👉 https://console.cloud.google.com/
+
+Click Activate Cloud Shell
+
+2️⃣ Clone the Repository
+git clone https://github.com/Sushmitha2707/healthcare-mcp-agent.git
+cd healthcare-mcp-agent
+3️⃣ Set Project & Region
+gcloud config set project YOUR_PROJECT_ID
+gcloud config set run/region us-central1
+4️⃣ Enable Required Services
+gcloud services enable run.googleapis.com
+gcloud services enable cloudbuild.googleapis.com
+5️⃣ Deploy to Cloud Run
+gcloud run deploy healthcare-mcp-agent \
+  --source . \
+  --allow-unauthenticated \
+  --port 8080
+6️⃣ Access Your Application
+
+After deployment, you will get a URL like:
+
+https://healthcare-mcp-agent-xxxxxx.run.app
+
+👉 Open it in browser to use your app 🎉
+
+7️⃣ (Optional) Update Environment Variables
+
+If needed, deploy with environment variables:
+
+gcloud run deploy healthcare-mcp-agent \
+  --source . \
+  --set-env-vars GOOGLE_API_KEY=your_api_key \
+  --allow-unauthenticated \
+  --port 8080
+✅ Done
+
+👉 This version is:
+
+Clean ✅
+Hackathon-ready ✅
+Matches Cloud Run deployment ✅
+
+If you want next:
+👉 I can optimize your README to look premium (top 5% submissions)
+👉 Or review your final GitHub before submission
+
+Just tell 👍
+
+give me to update in code for README file
+
+Here’s your final ready-to-paste README section (only the updated part) 👇
+Just replace your current “Setup & Installation” section with this:
+
+## ☁️ Setup & Deployment (Google Cloud Run)
+
+### 1️⃣ Open Google Cloud Console
+Go to: https://console.cloud.google.com/  
+Click **Activate Cloud Shell**
+
+---
+
+### 2️⃣ Clone the Repository
 ```bash
-   git clone https://github.com/Sushmitha2707/healthcare-mcp-agent.git
-   cd healthcare-mcp-agent
-```
+git clone https://github.com/Sushmitha2707/healthcare-mcp-agent.git
+cd healthcare-mcp-agent
+3️⃣ Set Project & Region
+gcloud config set project YOUR_PROJECT_ID
+gcloud config set run/region us-central1
+4️⃣ Enable Required Services
+gcloud services enable run.googleapis.com
+gcloud services enable cloudbuild.googleapis.com
+5️⃣ Deploy to Cloud Run
+gcloud run deploy healthcare-mcp-agent \
+  --source . \
+  --allow-unauthenticated \
+  --port 8080
+6️⃣ Access the Application
 
-2. **Create a virtual environment**
-```bash
-   python -m venv venv
-   venv\Scripts\activate   # Windows
-```
+After deployment, you will get a URL like:
 
-3. **Install dependencies**
-```bash
-   pip install -r requirements.txt
-```
+https://healthcare-mcp-agent-xxxxxx.run.app
 
-4. **Set up environment variables**
-```bash
-   # Add to .env file
-   GOOGLE_API_KEY=your_google_api_key_here
-```
+Open it in your browser to use the application.
 
-5. **Run the app**
-```bash
-   python main.py
-```
-
-6. **Open in browser**
-https://healthcare-mcp-agent-684229547172.us-central1.run.app/
-
+7️⃣ (Optional) Add Environment Variables
+gcloud run deploy healthcare-mcp-agent \
+  --source . \
+  --set-env-vars GOOGLE_API_KEY=your_api_key \
+  --allow-unauthenticated \
+  --port 8080
 ---
 
 ## 🐳 Run with Docker
