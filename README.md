@@ -122,7 +122,7 @@ healthcare-mcp-agent/
 ```
 
 6. **Open in browser**
-http://localhost:8080
+https://healthcare-mcp-agent-684229547172.us-central1.run.app/
 
 ---
 
